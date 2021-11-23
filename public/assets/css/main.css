@@ -46,6 +46,9 @@
     color: #fff;
     font-size: 16px;
     text-align: center; }
+    @media all and (min-width: 768px) {
+      .header__section {
+        font-size: 24px; } }
     .header__section--title {
       font-family: "Roboto Slab", serif;
       font-size: 42px;
@@ -53,6 +56,10 @@
       text-align: center;
       word-spacing: 100%;
       margin: 0 0 10px; }
+      @media all and (min-width: 768px) {
+        .header__section--title {
+          font-size: 80px;
+          margin: 0 0 20px; } }
     .header__section--icon {
       background-color: #fff;
       width: 45px;
@@ -61,6 +68,9 @@
       margin: 45px 0 53px;
       line-height: 45px;
       text-align: center; }
+      @media all and (min-width: 768px) {
+        .header__section--icon {
+          margin: 30px 0 45px; } }
 
 .firstSection {
   width: 100%;
@@ -68,6 +78,9 @@
   font-size: 18px;
   line-height: 30px;
   color: #4a4a4a; }
+  @media all and (min-width: 768px) {
+    .firstSection {
+      font-size: 20px; } }
   .firstSection__small {
     margin: 30px 0 0;
     font-size: 14px;
@@ -80,6 +93,11 @@
     font-family: "Roboto Slab", serif;
     text-transform: capitalize;
     color: #000; }
+    @media all and (min-width: 768px) {
+      .firstSection__title {
+        font-size: 26px;
+        line-height: 45px;
+        margin: 0 0 30px; } }
   .firstSection__button {
     width: 76px;
     height: 45px;
@@ -98,6 +116,10 @@
     .firstSection__button:active {
       background-color: #8ccbea;
       border: none; }
+    @media all and (min-width: 768px) {
+      .firstSection__button {
+        width: 91px;
+        margin: 30px 0 60px; } }
 
 .secondSection {
   width: 100%;
@@ -109,24 +131,54 @@
     font-size: 24px;
     font-family: "Roboto Slab", serif;
     text-transform: capitalize; }
+    @media all and (min-width: 768px) {
+      .secondSection__title {
+        font-size: 26px; } }
   .secondSection__grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr); }
+    @media all and (min-width: 768px) {
+      .secondSection__grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr; } }
     .secondSection__grid--item {
       padding-top: 45px;
       font-size: 18px;
       line-height: 30px;
       grid-column: 2/5; }
+      @media all and (min-width: 768px) {
+        .secondSection__grid--item {
+          grid-column: span 1;
+          font-size: 20px; } }
     .secondSection__grid--item .title {
       font-size: 18px;
       font-family: "Roboto Slab", serif; }
+      @media all and (min-width: 768px) {
+        .secondSection__grid--item .title {
+          margin-bottom: 14px;
+          font-size: 24px; } }
     .secondSection__grid--item.item1 {
       grid-row: 1/2; }
+      @media all and (min-width: 768px) {
+        .secondSection__grid--item.item1 {
+          grid-row: span 1;
+          grid-column: 1/2;
+          margin: 0 18px 0; } }
     .secondSection__grid--item.item2 {
       grid-row: 2/3; }
+      @media all and (min-width: 768px) {
+        .secondSection__grid--item.item2 {
+          grid-row: span 1;
+          grid-column: 2/3;
+          margin: 0 18px 0; } }
     .secondSection__grid--item.item3 {
       grid-row: 3/4; }
+      @media all and (min-width: 768px) {
+        .secondSection__grid--item.item3 {
+          grid-row: span 1;
+          grid-column: 3/4;
+          margin: 0 18px 0; } }
   .secondSection__button {
     width: 184px;
     height: 45px;
@@ -143,6 +195,10 @@
       transform: scale(110%); }
     .secondSection__button:active {
       background-color: #8ccbea; }
+    @media all and (min-width: 768px) {
+      .secondSection__button {
+        width: 210px;
+        margin-top: 60px; } }
 
 .footer {
   width: 100%;
@@ -169,15 +225,13 @@
       text-decoration: none;
       color: #fff; }
   .footer__small {
+    margin: 15px 0 45px;
     font-size: 14px;
     line-height: 30px;
+    text-align: center;
     color: #fff; }
-  .footer__small.top {
-    margin-top: 15px; }
-  .footer__small.bottom {
-    margin-bottom: 45px; }
-  .footer__small .love {
-    color: #f26002; }
+    .footer__small--love {
+      color: #f26002; }
 
 .main__list {
   padding-left: 2rem;

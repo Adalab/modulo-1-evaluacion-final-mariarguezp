@@ -30,20 +30,14 @@
   }
 
   &__small {
+    margin: 15px 0 45px;
     font-size: 14px;
     line-height: 30px;
+    text-align: center;
     color: $colorMain;
-  }
 
-  &__small.top {
-    margin-top: 15px;
-  }
-
-  &__small.bottom {
-    margin-bottom: 45px;
-  }
-
-  &__small .love {
-    color: $colorButtons;
+    &--love {
+      color: $colorButtons;
+    }
   }
 }
