@@ -1,8 +1,49 @@
-.page__footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  padding: 1rem;
-  color: $colorTertiary;
+.footer {
+  width: 100%;
+  background-color: $colorTertiary;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__icon {
+      width: 45px;
+      height: 45px;
+      padding: 11px 12.4px 10px 12px;
+      background-color: $colorMain;
+      border-radius: 50%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      transform: translateY(-22.5px);
+  }
+
+  &__list {
+    margin: 15px 0 15px;
+    list-style: none;
+    font-size: 16px;
+    text-align: center;
+    line-height: 30px;
+    text-transform: uppercase;
+
+    &--item {      
+      text-decoration: none;
+      color: $colorMain;
+    }
+  }
+
+  &__small {
+    font-size: 14px;
+    line-height: 30px;
+    color: $colorMain;
+  }
+
+  &__small.top {
+    margin-top: 15px;
+  }
+
+  &__small.bottom {
+    margin-bottom: 45px;
+  }
+
+  &__small .love {
+    color: $colorButtons;
+  }
 }
