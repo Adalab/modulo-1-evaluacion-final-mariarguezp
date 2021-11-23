@@ -1,0 +1,55 @@
+.secondSection {
+    width: 100%;
+    background-color: $colorSecondary;
+    display: flex;
+    text-align: center;
+
+    &__title {
+        margin-top: 30px;
+        font-size: 24px;
+        font-family: $fontTitles;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+        &--item {
+            padding-top: 45px;
+            font-size: 18px;
+            line-height: 30px;
+            grid-column: 2/5;
+        }
+
+        &--item .title {
+            font-size: 18px;
+            font-family: $fontTitles;
+        }
+
+        &--item.item1 {
+            grid-row: 1/2;
+        }
+    
+        &--item.item2 {
+            grid-row: 2/3;
+        }
+    
+        &--item.item3 {
+            grid-row: 3/4;
+        }
+    }
+
+    &__button {
+        width: 184px;
+        height: 45px;
+        margin: 45px 0 60px;
+        background-color: $colorButtons;
+        border-radius: 22.5px;
+        border: none;
+        font-size: 20px;
+        font-family: $fontMain;
+        font-weight: 500;
+        color: $colorMain;
+    }
+}

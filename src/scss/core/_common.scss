@@ -1,9 +1,9 @@
 .body {
     width: 100%;
     font-family: $fontMain;
+    color: $colorText;
 }
 
 .margin {
-    box-sizing: content-box;
     margin: 0 15px;
 }

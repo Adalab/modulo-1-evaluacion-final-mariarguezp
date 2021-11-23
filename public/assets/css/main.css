@@ -5,10 +5,10 @@
 
 .body {
   width: 100%;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  color: #000; }
 
 .margin {
-  box-sizing: content-box;
   margin: 0 15px; }
 
 .code {
@@ -91,6 +91,45 @@
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     color: #f26002; }
+
+.secondSection {
+  width: 100%;
+  background-color: #eff9ff;
+  display: flex;
+  text-align: center; }
+  .secondSection__title {
+    margin-top: 30px;
+    font-size: 24px;
+    font-family: "Roboto Slab", serif; }
+  .secondSection__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr); }
+    .secondSection__grid--item {
+      padding-top: 45px;
+      font-size: 18px;
+      line-height: 30px;
+      grid-column: 2/5; }
+    .secondSection__grid--item .title {
+      font-size: 18px;
+      font-family: "Roboto Slab", serif; }
+    .secondSection__grid--item.item1 {
+      grid-row: 1/2; }
+    .secondSection__grid--item.item2 {
+      grid-row: 2/3; }
+    .secondSection__grid--item.item3 {
+      grid-row: 3/4; }
+  .secondSection__button {
+    width: 184px;
+    height: 45px;
+    margin: 45px 0 60px;
+    background-color: #f26002;
+    border-radius: 22.5px;
+    border: none;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: #fff; }
 
 .page__footer {
   position: fixed;
