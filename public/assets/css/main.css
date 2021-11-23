@@ -90,7 +90,14 @@
     font-size: 20px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
-    color: #f26002; }
+    color: #f26002;
+    transition: background-color linear 0.5s, color linear 0.5s, border linear 0.5s; }
+    .firstSection__button:hover {
+      background-color: #f26002;
+      color: #fff; }
+    .firstSection__button:active {
+      background-color: #8ccbea;
+      border: none; }
 
 .secondSection {
   width: 100%;
@@ -100,7 +107,8 @@
   .secondSection__title {
     margin-top: 30px;
     font-size: 24px;
-    font-family: "Roboto Slab", serif; }
+    font-family: "Roboto Slab", serif;
+    text-transform: capitalize; }
   .secondSection__grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -129,7 +137,12 @@
     font-size: 20px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
-    color: #fff; }
+    color: #fff;
+    transition: background-color ease 0.1s, transform ease-in-out 0.5s; }
+    .secondSection__button:hover {
+      transform: scale(110%); }
+    .secondSection__button:active {
+      background-color: #8ccbea; }
 
 .footer {
   width: 100%;

@@ -32,5 +32,16 @@
     font-family: $fontMain;
     font-weight: 500;
     color: $colorButtons;
+    transition: background-color linear 0.5s, color linear 0.5s, border linear 0.5s;
+
+    &:hover {
+      background-color: $colorButtons;
+      color: $colorMain;
+    }
+
+    &:active {
+      background-color: $colorSmall;
+      border: none;
+    }
   }
 }

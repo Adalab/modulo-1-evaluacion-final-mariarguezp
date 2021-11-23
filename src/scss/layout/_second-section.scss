@@ -8,6 +8,7 @@
         margin-top: 30px;
         font-size: 24px;
         font-family: $fontTitles;
+        text-transform: capitalize;
     }
 
     &__grid {
@@ -51,5 +52,14 @@
         font-family: $fontMain;
         font-weight: 500;
         color: $colorMain;
+        transition: background-color ease 0.1s, transform ease-in-out 0.5s;
+
+        &:hover {
+            transform: scale(110%);
+        }
+
+        &:active {
+            background-color: $colorSmall;
+        }
     }
 }
