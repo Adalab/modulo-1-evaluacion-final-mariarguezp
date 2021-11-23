@@ -1,0 +1,36 @@
+.firstSection {
+  width: 100%;
+  background-color: $colorMain;
+  font-size: 18px;
+  line-height: 30px;
+  color: $colorTextSecondary;
+
+  &__small {
+    margin: 30px 0 0;
+    font-size: 14px;
+    line-height: 30px;
+    color: $colorSmall;
+  }
+
+  &__title {
+    width: 100%;
+    margin: 0 0 15px;
+    font-size: 24px;
+    font-family: $fontTitles;
+    text-transform: capitalize;
+    color: $colorText;
+  }
+
+  &__button {
+    width: 76px;
+    height: 45px;
+    margin: 30px 0 45px;
+    background-color: $colorMain;
+    border: $colorButtons 2px solid;
+    border-radius: 22.5px;
+    font-size: 20px;
+    font-family: $fontMain;
+    font-weight: 500;
+    color: $colorButtons;
+  }
+}
