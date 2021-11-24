@@ -1,17 +1,17 @@
 .body {
-    width: 100%;
-    font-family: $fontMain;
-    color: $colorText;
+  width: 100%;
+  font-family: $fontMain;
+  color: $colorText;
 }
 
 .margin {
-    margin: 0 15px;
+  margin: 0 15px;
 
-    @media all and (min-width: 768px) {
-        margin: 0 39px;
-    }
+  @media all and (min-width: 768px) {
+    margin: 0 39px;
+  }
 
-    @media all and (min-width: 1280px) {
-        margin: 0 81.2px;
-    }
+  @media all and (min-width: 1280px) {
+    margin: 0 81.2px;
+  }
 }

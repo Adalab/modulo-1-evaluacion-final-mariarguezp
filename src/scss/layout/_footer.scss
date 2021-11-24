@@ -1,23 +1,28 @@
 .footer {
-  width: 100%;
-  background-color: $colorTertiary;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  background-color: $colorTertiary;
 
   &__icon {
+    position: absolute;
     width: 45px;
     height: 45px;
     padding: 11px 12.4px 10px 12px;
     background-color: $colorMain;
     border-radius: 50%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    transform: translateY(-22.5px);
+    transform: translateY(-50%);
+    animation-name: slipperyIcon;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
   }
 
   &__section {
     width: 100%;
-    margin-bottom: 45px;
+    margin: 45px 0;
 
     @media all and (min-width: 768px) {
       display: flex;
@@ -35,8 +40,8 @@
       list-style: none;
       font-size: 16px;
       text-align: center;
-      line-height: 30px;
       text-transform: uppercase;
+      line-height: 30px;
 
       @media all and (min-width: 768px) {
         margin: 0;
@@ -44,17 +49,17 @@
       }
 
       &.item {
-        text-decoration: none;
         color: $colorMain;
+        text-decoration: none;
       }
     }
 
     &--small {
       width: 30%;
-      font-size: 14px;
-      line-height: 30px;
-      text-align: center;
       color: $colorMain;
+      font-size: 14px;
+      text-align: center;
+      line-height: 30px;
 
       @media all and (min-width: 768px) {
         text-align: left;
@@ -67,11 +72,34 @@
 
     & .flex {
       @media all and (min-width: 768px) {
-        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        width: 100%;
       }
     }
+  }
+}
+
+@keyframes slipperyIcon {
+  0% {
+    transform: translateY(-50%) rotate(45deg);
+    background-color: $colorMain;
+  }
+  25% {
+    transform: translateY(-50%) rotate(-45deg);
+    background-color: $colorSmall;
+  }
+  50% {
+    transform: translateY(-50%) rotate(45deg);
+    background-color: $colorMenu;
+  }
+  75% {
+    transform: translateY(-50%) rotate(-45deg);
+    background-color: $colorSmall;
+  }
+  100% {
+    transform: translateY(-50%) rotate(45deg);
+    background-color: $colorMain;
   }
 }
