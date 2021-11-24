@@ -4,9 +4,19 @@
   font-size: 18px;
   line-height: 30px;
   color: $colorTextSecondary;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   @media all and (min-width: 768px) {
     font-size: 20px;
+  }
+
+  & .margin {
+    @media all and (min-width: 1280px) {
+      max-width: 730px;
+    }
   }
 
   &__small {
@@ -14,6 +24,11 @@
     font-size: 14px;
     line-height: 30px;
     color: $colorSmall;
+
+    @media all and (min-width: 1280px) {
+      font-size: 16px;
+      margin: 60px 0 0;
+    }
   }
 
   &__title {
@@ -28,6 +43,10 @@
       font-size: 26px;
       line-height: 45px;
       margin: 0 0 30px;
+    }
+
+    @media all and (min-width: 1280px) {
+      font-size: 32px;
     }
   }
 
@@ -58,6 +77,10 @@
     @media all and (min-width: 768px) {
       width: 91px;
       margin: 30px 0 60px;
+    }
+
+    @media all and (min-width: 1280px) {
+      width: 160px;
     }
   }
 }

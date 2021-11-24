@@ -39,6 +39,12 @@
         font-size: 80px;
         margin: 0 0 20px;
       }
+
+      @media all and (min-width: 1280px) {
+        font-size: 100px;
+        word-spacing: 100vh;
+        margin: 0;
+      }
     }
 
     &--icon {
@@ -52,6 +58,10 @@
 
       @media all and (min-width: 768px) {
         margin: 30px 0 45px;
+      }
+
+      @media all and (min-width: 1280px) {
+        margin: 30px 0 13px;
       }
     }
   }

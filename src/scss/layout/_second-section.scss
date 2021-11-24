@@ -1,107 +1,116 @@
 .secondSection {
-    width: 100%;
-    background-color: $colorSecondary;
-    display: flex;
-    text-align: center;
+  width: 100%;
+  background-color: $colorSecondary;
+  display: flex;
+  text-align: center;
 
-    &__title {
-        margin-top: 30px;
-        font-size: 24px;
-        font-family: $fontTitles;
-        text-transform: capitalize;
+  &__title {
+    margin-top: 30px;
+    font-size: 24px;
+    font-family: $fontTitles;
+    text-transform: capitalize;
 
-        @media all and (min-width: 768px) {
-            font-size: 26px;
-        }
+    @media all and (min-width: 768px) {
+      font-size: 26px;
     }
 
-    &__grid {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+    @media all and (min-width: 1280px) {
+      font-size: 32px;
+      margin-top: 60px;
+    }
+  }
 
-        @media all and (min-width: 768px) {
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr;
-        }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 
-        &--item {
-            padding-top: 45px;
-            font-size: 18px;
-            line-height: 30px;
-            grid-column: 2/5;
-
-            @media all and (min-width: 768px) {
-                grid-column: span 1;
-                font-size: 20px;
-            }
-        }
-
-        &--item .title {
-            font-size: 18px;
-            font-family: $fontTitles;
-            
-            @media all and (min-width: 768px) {
-                margin-bottom: 14px;
-                font-size: 24px;
-            }
-        }
-
-        &--item.item1 {
-            grid-row: 1/2;
-
-            @media all and (min-width: 768px) {
-                grid-row: span 1;
-                grid-column:  1/2;
-                margin: 0 18px 0;
-            }
-        }
-    
-        &--item.item2 {
-            grid-row: 2/3;
-
-            @media all and (min-width: 768px) {
-                grid-row: span 1;
-                grid-column: 2/3;
-                margin: 0 18px 0;
-            }
-        }
-    
-        &--item.item3 {
-            grid-row: 3/4;
-
-            @media all and (min-width: 768px) {
-                grid-row: span 1;
-                grid-column: 3/4;
-                margin: 0 18px 0;
-            }
-        }
+    @media all and (min-width: 768px) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
     }
 
-    &__button {
-        width: 184px;
-        height: 45px;
-        margin: 45px 0 60px;
-        background-color: $colorButtons;
-        border-radius: 22.5px;
-        border: none;
+    &--item {
+      padding-top: 45px;
+      font-size: 18px;
+      line-height: 30px;
+      grid-column: 2/5;
+
+      @media all and (min-width: 768px) {
+        grid-column: span 1;
         font-size: 20px;
-        font-family: $fontMain;
-        font-weight: 500;
-        color: $colorMain;
-        transition: background-color ease 0.1s, transform ease-in-out 0.5s;
-
-        &:hover {
-            transform: scale(110%);
-        }
-
-        &:active {
-            background-color: $colorSmall;
-        }
-
-        @media all and (min-width: 768px) {
-            width: 210px;
-            margin-top: 60px;
-        }
+      }
     }
+
+    &--item .title {
+      font-size: 18px;
+      font-family: $fontTitles;
+
+      @media all and (min-width: 768px) {
+        margin-bottom: 14px;
+        font-size: 24px;
+      }
+    }
+
+    &--item.item1 {
+      grid-row: 1/2;
+
+      @media all and (min-width: 768px) {
+        grid-row: span 1;
+        grid-column: 1/2;
+        margin: 0 18px 0;
+      }
+    }
+
+    &--item.item2 {
+      grid-row: 2/3;
+
+      @media all and (min-width: 768px) {
+        grid-row: span 1;
+        grid-column: 2/3;
+        margin: 0 18px 0;
+      }
+    }
+
+    &--item.item3 {
+      grid-row: 3/4;
+
+      @media all and (min-width: 768px) {
+        grid-row: span 1;
+        grid-column: 3/4;
+        margin: 0 18px 0;
+      }
+    }
+  }
+
+  &__button {
+    width: 184px;
+    height: 45px;
+    margin: 45px 0 60px;
+    background-color: $colorButtons;
+    border-radius: 22.5px;
+    border: none;
+    font-size: 20px;
+    font-family: $fontMain;
+    font-weight: 500;
+    color: $colorMain;
+    transition: background-color ease 0.1s, transform ease-in-out 0.5s;
+
+    &:hover {
+      transform: scale(110%);
+    }
+
+    &:active {
+      background-color: $colorSmall;
+    }
+
+    @media all and (min-width: 768px) {
+      width: 210px;
+      margin-top: 60px;
+    }
+
+    @media all and (min-width: 1280px) {
+      width: 255px;
+    }
+  }
 }

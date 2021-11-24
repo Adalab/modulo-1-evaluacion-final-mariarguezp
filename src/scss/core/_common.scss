@@ -6,4 +6,12 @@
 
 .margin {
     margin: 0 15px;
+
+    @media all and (min-width: 768px) {
+        margin: 0 39px;
+    }
+
+    @media all and (min-width: 1280px) {
+        margin: 0 81.2px;
+    }
 }
