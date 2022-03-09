@@ -1,7 +1,7 @@
 .header {
   width: 100%;
   height: 100vh;
-  background-image: url("../images/cover.jpg");
+  background-image: url("../images/gradient.jpg");
   background-size: cover;
   background-position: center;
 
@@ -11,6 +11,51 @@
     height: 44px;
     padding: 15px 14px;
     background-color: $colorMenu;
+  }
+
+  &__div {
+    border: 1px solid $colorMain;
+    width: 40%;
+    height: 45%;
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    border-radius: 50%;
+    transform: rotate(-60deg);
+    animation: spinningEllipse 10s 0s infinite alternate linear;
+
+    @keyframes spinningEllipse {
+      0% {
+        opacity: 0;
+        width: 50%;
+        height: 40%;
+        transform: rotate(0deg);
+      }
+      25% {
+        opacity: 1;
+        width: 20%;
+        height: 40%;
+        transform: rotate(45deg);
+      }
+      50% {
+        opacity: 0.5;
+        width: 40%;
+        height: 45%;
+        transform: rotate(90deg);
+      }
+      75% {
+        opacity: 1;
+        width: 30%;
+        height: 40%;
+        transform: rotate(135deg);
+      }
+      100% {
+        opacity: 0;
+        width: 40%;
+        height: 40%;
+        transform: rotate(180deg);
+      }
+    }
   }
 
   &__section {
@@ -28,9 +73,14 @@
     }
 
     &--title {
+      @font-face {
+        font-family: "Aromatron";
+        src: url("../fonts/Aromatron-Regular.ttf");
+      }
+
       margin: 0 0 10px;
       font-size: 42px;
-      font-family: $fontTitles;
+      font-family: "Aromatron";
       text-align: center;
       text-transform: uppercase;
       word-spacing: 100%;
