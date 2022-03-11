@@ -9,13 +9,14 @@
   color: #000; }
 
 .margin {
-  margin: 0 15px; }
+  width: 100%;
+  padding: 0 15px; }
   @media all and (min-width: 768px) {
     .margin {
-      margin: 0 39px; } }
+      padding: 0 39px; } }
   @media all and (min-width: 1280px) {
     .margin {
-      margin: 0 81.2px; } }
+      padding: 0 81.2px; } }
 
 .header {
   width: 100%;
@@ -28,7 +29,7 @@
     width: 44px;
     height: 44px;
     padding: 15px 14px;
-    background-color: #9E5CE0; }
+    background-color: #625be9; }
   .header__div {
     border: 1px solid #fff;
     width: 40%;
@@ -109,15 +110,10 @@
     .header__section--title {
       margin: 0 0 10px;
       font-size: 42px;
-      font-family: "Aromatron";
+      font-family: "Italiana", serif;
       text-align: center;
       text-transform: uppercase;
       word-spacing: 100%; }
-
-@font-face {
-  .header__section--title {
-    font-family: "Aromatron";
-    src: url("../fonts/Aromatron-Regular.ttf"); } }
       @media all and (min-width: 768px) {
         .header__section--title {
           margin: 0 0 20px;
@@ -150,17 +146,17 @@
   width: 100%;
   color: #4a4a4a;
   background-color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 30px; }
   @media all and (min-width: 768px) {
     .firstSection {
-      font-size: 20px; } }
+      font-size: 18px; } }
   @media all and (min-width: 1280px) {
     .firstSection .margin {
       max-width: 730px; } }
   .firstSection__small {
     margin: 30px 0 0;
-    color: #E4C2F2;
+    color: #A3D9C5;
     font-size: 14px;
     line-height: 30px; }
     @media all and (min-width: 1280px) {
@@ -172,7 +168,7 @@
     margin: 0 0 15px;
     color: #000;
     font-size: 24px;
-    font-family: "Roboto Slab", serif;
+    font-family: "Italiana", serif;
     text-transform: capitalize; }
     @media all and (min-width: 768px) {
       .firstSection__title {
@@ -198,7 +194,7 @@
       color: #fff;
       background-color: #f26002; }
     .firstSection__button:active {
-      background-color: #E4C2F2;
+      background-color: #A3D9C5;
       border: none; }
     @media all and (min-width: 768px) {
       .firstSection__button {
@@ -210,30 +206,59 @@
 
 .prizing {
   width: 100%;
-  padding: 30px 0;
+  padding: 30px 0 60px;
   color: #fff;
-  background-color: #5d3685;
+  background-color: #4e48ad;
   display: flex;
   flex-direction: column;
   align-items: center;
-  line-height: 30px; }
-  @media all and (min-width: 768px) {
-    .prizing__section {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      width: 100%;
-      padding: 0 30px; } }
+  line-height: 30px;
+  text-align: center; }
+  @media all and (min-width: 1280px) {
+    .prizing {
+      padding: 60px 0 60px; } }
+  .prizing__title {
+    font-size: 24px;
+    font-family: "Italiana", serif; }
+    @media all and (min-width: 768px) {
+      .prizing__title {
+        font-size: 26px; } }
+    @media all and (min-width: 1280px) {
+      .prizing__title {
+        font-size: 32px; } }
+  .prizing__section {
+    width: 100%;
+    padding-top: 45px;
+    font-family: "Italiana", serif; }
+    @media all and (min-width: 768px) {
+      .prizing__section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 45px 5% 0; } }
+    .prizing__section--plan1 {
+      padding-bottom: 45px;
+      font-size: 18px; }
+      @media all and (min-width: 768px) {
+        .prizing__section--plan1 {
+          padding: 0;
+          font-size: 24px; } }
+    .prizing__section--plan2 {
+      font-size: 18px; }
+      @media all and (min-width: 768px) {
+        .prizing__section--plan2 {
+          font-size: 24px; } }
 
 .secondSection {
   display: flex;
   width: 100%;
-  background-color: #eff9ff;
+  background-color: #e0defd;
   text-align: center; }
   .secondSection__title {
     margin-top: 30px;
     font-size: 24px;
-    font-family: "Roboto Slab", serif;
+    font-family: "Italiana", serif;
     text-transform: capitalize; }
     @media all and (min-width: 768px) {
       .secondSection__title {
@@ -253,15 +278,15 @@
     .secondSection__grid--item {
       grid-column: 2/5;
       padding-top: 45px;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 30px; }
       @media all and (min-width: 768px) {
         .secondSection__grid--item {
           grid-column: span 1;
-          font-size: 20px; } }
+          font-size: 18px; } }
     .secondSection__grid--item .title {
       font-size: 18px;
-      font-family: "Roboto Slab", serif; }
+      font-family: "Italiana", serif; }
       @media all and (min-width: 768px) {
         .secondSection__grid--item .title {
           margin-bottom: 14px;
@@ -302,7 +327,7 @@
     .secondSection__button:hover {
       transform: scale(110%); }
     .secondSection__button:active {
-      background-color: #E4C2F2; }
+      background-color: #A3D9C5; }
     @media all and (min-width: 768px) {
       .secondSection__button {
         width: 210px;
@@ -316,7 +341,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-color: #5d3685; }
+  background-color: #4e48ad; }
   .footer__icon {
     position: absolute;
     width: 45px;
@@ -384,13 +409,13 @@
     background-color: #fff; }
   25% {
     transform: translateY(-50%) rotate(-45deg);
-    background-color: #E4C2F2; }
+    background-color: #A3D9C5; }
   50% {
     transform: translateY(-50%) rotate(45deg);
-    background-color: #9E5CE0; }
+    background-color: #625be9; }
   75% {
     transform: translateY(-50%) rotate(-45deg);
-    background-color: #E4C2F2; }
+    background-color: #A3D9C5; }
   100% {
     transform: translateY(-50%) rotate(45deg);
     background-color: #fff; } }
@@ -401,13 +426,13 @@
     background-color: #fff; }
   25% {
     transform: translateY(-50%) rotate(-45deg);
-    background-color: #E4C2F2; }
+    background-color: #A3D9C5; }
   50% {
     transform: translateY(-50%) rotate(45deg);
-    background-color: #9E5CE0; }
+    background-color: #625be9; }
   75% {
     transform: translateY(-50%) rotate(-45deg);
-    background-color: #E4C2F2; }
+    background-color: #A3D9C5; }
   100% {
     transform: translateY(-50%) rotate(45deg);
     background-color: #fff; } }

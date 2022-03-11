@@ -73,14 +73,9 @@
     }
 
     &--title {
-      @font-face {
-        font-family: "Aromatron";
-        src: url("../fonts/Aromatron-Regular.ttf");
-      }
-
       margin: 0 0 10px;
       font-size: 42px;
-      font-family: "Aromatron";
+      font-family: $fontTitles;
       text-align: center;
       text-transform: uppercase;
       word-spacing: 100%;
